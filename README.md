@@ -7,6 +7,6 @@
 ![image](https://github.com/user-attachments/assets/47b20d4d-94bc-4ad8-9c06-d154bf04333d)
 
 ### Confirming Order
-![image](https://github.com/user-attachments/assets/1ea97b71-9015-494b-94d9-52e17ca634ce)
+![image](https://github.com/user-attachments/assets/a6ccbd35-957c-47dc-b1f5-39915c31325a)
 
 
