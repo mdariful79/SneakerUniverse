@@ -8,15 +8,15 @@ let pdt = ['', '', '', '', '', '', '', '', '', '', '']
 let price = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let butct = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let imadd = ["",
-    "assets/images/image-waffle-desktop.jpg",
-    "assets/images/image-creme-brulee-desktop.jpg",
-    "assets/images/image-macaron-desktop.jpg",
-    "assets/images/image-tiramisu-desktop.jpg",
-    "assets/images/image-baklava-desktop.jpg",
-    "assets/images/image-meringue-desktop.jpg",
-    "assets/images/image-cake-desktop.jpg",
-    "assets/images/image-brownie-desktop.jpg",
-    "assets/images/image-panna-cotta-desktop.jpg",
+    "assets/images/adidasSambaOG.png",
+    "assets/images/pumaFenty.png",
+    "assets/images/cityWalk.png",
+    "assets/images/adidasHandball.png",
+    "assets/images/pumaLQDCELL.png",
+    "assets/images/jordanMaxAura.png",
+    "assets/images/adidasPrelove.png",
+    "assets/images/adidasGalaxy6.png",
+    "assets/images/rossJaden.png",
 ];
 window.onload = function () {
     if (window.innerWidth < 775) {
@@ -93,7 +93,7 @@ function cartdisplay(p, tem, but, ctem) {
     document.getElementById(tem).innerHTML = `
     <p>${pdt[p]}</p> 
     <button id="${but}" ><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#CAAFA7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"/></svg></button>
-    <p2><p1><span id="sp1">${out[p]}</span>x</p1> <p4>@৳<span id="sp2">${cost[p]}</span></p4><p5> ৳<span id="sp3">${price[p]}</span></p5></p2>`
+    <p2><p1><span id="sp1">${out[p]}</span>x</p1> <p4>৳<span id="sp2">${cost[p]}</span></p4><p5>৳<span id="sp3">${price[p]}</span></p5></p2>`
     document.getElementById(but).onclick = function () { close(but) };
     try {
         if (out[p] == 0) {
@@ -101,8 +101,8 @@ function cartdisplay(p, tem, but, ctem) {
             document.getElementById(ctem).remove();
         }
         document.getElementById(ctem).innerHTML = `
-    <p>${pdt[p]}</p> <p5> ৳<span id="sp3">${price[p]}</span></p5>
-    <p2><p1><span id="sp1">${out[p]}</span>x</p1> <p4>@৳<span id="sp2">${cost[p]}</span></p4></p2>
+    <p>${pdt[p]}</p> <p5>৳<span id="sp3">${price[p]}</span></p5>
+    <p2><p1><span id="sp1">${out[p]}</span>x</p1> <p4>৳<span id="sp2">${cost[p]}</span></p4></p2>
     <img class="image" src="${imadd[p]}" alt="" >           `
     } catch (error) {
 
